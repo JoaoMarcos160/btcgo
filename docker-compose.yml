@@ -12,6 +12,6 @@ services:
       - USE_DB=1
       - NUM_RECS=10000
       - START_MODE=2
-      - START_PERCENT=99
+      - START_PERCENT=75
     stdin_open: true
     tty: true
