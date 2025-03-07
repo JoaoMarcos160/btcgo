@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  btcgo_app:
+    image: btcgo
+    build:
+      context: .
+    environment:
+      - CPU_COUNT=0 # Para usar todas CPUs disponíveis
+      - RANGE_NUMBER=68
+      - MODS=2
+      - USE_DB=1
+      - NUM_RECS=10000
+      - START_MODE=2
+      - START_PERCENT=99
+    stdin_open: true
+    tty: true

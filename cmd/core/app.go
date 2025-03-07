@@ -114,7 +114,7 @@ func (a *AppStruct) loadData() error {
 	}
 	// Carrega Ranges
 	if err := a.Ranges.Load(); err != nil {
-		log.Println("Não foi possivel ler oa ranges.")
+		log.Println("Não foi possivel ler os ranges.")
 		return err
 	}
 	return nil
