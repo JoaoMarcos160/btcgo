@@ -10,7 +10,6 @@ env:
 
 jobs:
   build_and_push_docker_image:
-    needs: test
     name: Build and push Docker image
     runs-on: ubuntu-latest
 
